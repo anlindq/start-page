@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Home Video';
+    src: url(assets/HomeVideo-BLG6G.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Home Video';
+    src: url(assets/HomeVideoBold-R90Dv.ttf);
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Home Video';
+    font-size: 20px;
+    background-color: #111111;
+    background-image: url('assets/background.gif');
+    background-size: 100% 100%;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+form {
+    display: flex;
+    border: none;
+    overflow: hidden;
+    height: 45px;
+    width: 95%;
+    background-color: rgb(34, 34, 34, 0.25);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Home Video';
+}
+
+input[type="text"] {
+    padding: 10px 20px;
+    border: none;
+    flex-grow: 1;
+    font-size: 16px;
+    outline: none;
+    height: 25px;
+    background-color: transparent;
+    color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    line-height: 2.5rem;
+    font-size: 24px;
+}
+
+a:link {
+    color: rgb(226, 194, 215);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(226, 194, 215);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(17, 124, 196);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28.1%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    font-size: 27px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    margin-top: 15px;
+}
+
+.clock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28.1%;
+    height: 63%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 48px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    max-height: 500px;
+    width: 90%;
+    height: 90vh;
+    background-color: rgb(40, 63, 105);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    bottom: 30px;
+    padding: 0;
+    justify-content: center;
+}
+
+.category {
+    color: rgb(226, 194, 215);
+    width: 33%;
+    height: 100%;
+    margin: none;
+}
+
+.daily-message {
+    color: rgb(226, 194, 215);
+    display: flex;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.hour-hand {
+    height: 30%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.minute-hand {
+    height: 40%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.second-hand {
+    height: 45%;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    background: red;
+}
+
+.analog-clock {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 30.5px;
+}
+
+.analog-clock div {
+    position: absolute;
+    width: 2px;
+    background: white;
+    transform-origin: bottom center;
+}
+
+#welcome {
+    color: rgb(226, 194, 215);
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#categories {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 20px;
+}
+
+#category-header {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+#social {
+    border-right: 1px solid rgba(17, 124, 196, 0.25);
+}
+
+#others {
+    border-left: 1px solid rgba(17, 124, 196, 0.25);
+}
+
+#coding-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+#others-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+    padding-right: 20px;
+}
+
+#social-list {
+    padding-left: 20px;
+}

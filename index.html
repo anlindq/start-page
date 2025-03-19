@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <base href="homepage">
+</head>
+
+<body>
+    <div class="main">
+        <img src="assets/homepage-img.jpg">
+        <div class="date"></div>
+        <div class="clock"></div>
+        <div class="analog-clock">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+        </div>
+        <div class="content">
+            <h1 id="welcome">Welcome</h1>
+            <div class="search">
+                <form action="https://duckduckgo.com/" method="get">
+                    <input type="text" name="q" placeholder="What's on your mind?" autofocus="autofocus"/>
+                </form>
+            </div>
+            <div id="categories">
+                <div class="category" id="social">
+                    <h3 id="category-header">| Social |</h3>
+                    <ul id="social-list">
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                        <li><a href="https://www.reddit.com/">Reddit</a></li>
+                        <li><a href="https://www.discord.com/app">Discord</a></li>
+                        <li>Last Item</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3 id="category-header">| Coding |</h3>
+                    <ul id="coding-list">
+                        <li><a href="https://github.com">GitHub</a></li>
+                        <li><a href="https://www.codewars.com/dashboard">Code Wars</a></li>
+                        <li>Tres Item</li>
+                        <li>4th Item</li>
+                        <li>oooh a </li>
+                    </ul>
+                </div>
+                <div class="category" id="others">
+                    <h3 id="category-header">| Others |</h3>
+                    <ul id="others-list">
+                        <li><a href="https://www.inoreader.com/dashboard">RSS</a></li>
+                        <li>Second Item</li>
+                        <li>Tres Item</li>
+                        <li>4th Item</li>
+                        <li>oooh a </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="daily-message">This is a daily message that will populate later.</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
