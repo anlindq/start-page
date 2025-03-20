@@ -93,7 +93,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: right;
-    font-size: 27px;
+    font-size: 24px;
     color: white;
     background-color: rgba(0, 0, 0, 0);
     pointer-events: none;
@@ -239,6 +239,7 @@ a:hover {
     justify-content: right;
     align-items: end;
     padding-right: 20px;
+    padding-left: 0px;
 }
 
 #social-list {
